@@ -18,6 +18,7 @@ Cloud foundry learning UI5 Deployment
 3) Create a folder with the name App router.
 4) Add package.json. 
 
+```
 {
     "name": "approuter",
     "version": "1.0.0",
@@ -37,8 +38,11 @@ Cloud foundry learning UI5 Deployment
         "@sap/approuter": "^8.5.4"
     }
 }
+```
 
 5) Add xs-app json with the destinations.
+
+```
 {
     "welcomeFile": "/app/esmanage/index.html",
     "authenticationMethod": "route",
@@ -69,12 +73,15 @@ Cloud foundry learning UI5 Deployment
 
     ]
 }
+```
 6) Configure the resources for the destination.
 
 
 ## To Run Locally
 1) In the app router folder.
 2) Configure default-env.json inside approuter 
+
+```
 {
     "destinations": [
         {
@@ -83,6 +90,7 @@ Cloud foundry learning UI5 Deployment
         }
     ]
 }
+```
 2) npm run start.
 3) This will start the approuter server with the application configured.
 
